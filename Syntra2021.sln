@@ -13,6 +13,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HuisartsDb", "HuisartsDb\Hu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HuisartsModels", "HuisartsModels\HuisartsModels.csproj", "{CB613768-E000-41F4-A56F-2D1B39C0A615}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cursus", "Cursus", "{C36F1239-EA0F-4912-B32E-F7D6C01017C3}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\2021-tmp\Huisarts\Cursus\CSharp-IO-EF.pptx = ..\..\2021-tmp\Huisarts\Cursus\CSharp-IO-EF.pptx
+		..\..\2021-tmp\Huisarts\Cursus\CSharp-IO.pptx = ..\..\2021-tmp\Huisarts\Cursus\CSharp-IO.pptx
+		..\..\2021-tmp\Huisarts\Cursus\git-commands.xlsx = ..\..\2021-tmp\Huisarts\Cursus\git-commands.xlsx
+		..\..\2021-tmp\Huisarts\Cursus\SourceControl-GIT.pptx = ..\..\2021-tmp\Huisarts\Cursus\SourceControl-GIT.pptx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
