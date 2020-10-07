@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{AF42FBD4-0AAF-4B7C-A7FC-72E1C170C2EA}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Huisarts-app", "Huisarts-app", "{334DB881-1A26-4D22-8F5E-589A40C128E5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HuisartsCli", "HuisartsCli\HuisartsCli.csproj", "{B448F618-C973-409F-9E72-E637559D66FC}"
@@ -15,10 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HuisartsModels", "HuisartsM
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cursus", "Cursus", "{C36F1239-EA0F-4912-B32E-F7D6C01017C3}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\2021-tmp\Huisarts\Cursus\CSharp-IO-EF.pptx = ..\..\2021-tmp\Huisarts\Cursus\CSharp-IO-EF.pptx
-		..\..\2021-tmp\Huisarts\Cursus\CSharp-IO.pptx = ..\..\2021-tmp\Huisarts\Cursus\CSharp-IO.pptx
-		..\..\2021-tmp\Huisarts\Cursus\git-commands.xlsx = ..\..\2021-tmp\Huisarts\Cursus\git-commands.xlsx
-		..\..\2021-tmp\Huisarts\Cursus\SourceControl-GIT.pptx = ..\..\2021-tmp\Huisarts\Cursus\SourceControl-GIT.pptx
+		Cursus\CSharp-IO-EF.pptx = Cursus\CSharp-IO-EF.pptx
+		Cursus\CSharp-IO.pptx = Cursus\CSharp-IO.pptx
+		Cursus\git-commands.xlsx = Cursus\git-commands.xlsx
+		Cursus\SourceControl-GIT.pptx = Cursus\SourceControl-GIT.pptx
 	EndProjectSection
 EndProject
 Global
@@ -27,10 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AF42FBD4-0AAF-4B7C-A7FC-72E1C170C2EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF42FBD4-0AAF-4B7C-A7FC-72E1C170C2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AF42FBD4-0AAF-4B7C-A7FC-72E1C170C2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AF42FBD4-0AAF-4B7C-A7FC-72E1C170C2EA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B448F618-C973-409F-9E72-E637559D66FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B448F618-C973-409F-9E72-E637559D66FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B448F618-C973-409F-9E72-E637559D66FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
