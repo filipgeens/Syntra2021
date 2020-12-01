@@ -19,5 +19,7 @@ namespace Boek.App.Views {
     public BoekView() {
       InitializeComponent();
     }
+
+
   }
 }

@@ -7,10 +7,35 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="650">
     <Grid Background="Transparent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="592*"/>
+            <ColumnDefinition Width="45"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="151*"/>
-            <RowDefinition Height="299*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="247*"/>
+            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
-
+        <Rectangle Grid.ColumnSpan="3">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2C2A2A" Offset="0.208"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <DataGrid Grid.Column="1" ItemsSource="{Binding AuteurList}" Grid.Row="1" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Artiestennaam" Binding="{Binding ArtiestenNaam}" Width="auto"/>
+                <DataGridTextColumn Header="Voornaam" Binding="{Binding Voornaam}" Width="auto"/>
+                <DataGridTextColumn Header="Achternaam" Binding="{Binding Achternaam}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button ToolTip="Add" Grid.Column="2" Command="{Binding CrudCommand}" CommandParameter="add" Width="32" Height="32" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/add.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </UserControl>

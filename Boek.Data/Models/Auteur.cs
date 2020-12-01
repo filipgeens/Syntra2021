@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Boek.Shared.Defines;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Boek.Data.Models {
-  public class Auteur {
+  public class Auteur :IModel{
     public int Id { get; set; }
     [Required]
     public string ArtiestenNaam { get; set; }
@@ -13,5 +14,6 @@ namespace Boek.Data.Models {
     public string Woonplaats { get; set; }
     public string Achtergrond { get; set; }
     public string Afbeelding { get; set; }
+    public DbImage Foto { get; set; }
   }
 }

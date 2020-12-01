@@ -14,7 +14,7 @@ namespace Boek.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.9");
+                .HasAnnotation("ProductVersion", "5.0.0");
 
             modelBuilder.Entity("Boek.Data.Models.Auteur", b =>
                 {
@@ -35,6 +35,9 @@ namespace Boek.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int?>("FotoId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Voornaam")
                         .HasColumnType("TEXT");
 
@@ -42,6 +45,8 @@ namespace Boek.Data.Migrations
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("FotoId");
 
                     b.ToTable("Auteurs");
                 });
@@ -59,19 +64,22 @@ namespace Boek.Data.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("EAN")
-                        .HasColumnType("TEXT")
-                        .HasMaxLength(18);
+                        .HasMaxLength(18)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("FotoId")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int?>("GenreId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("ISBN10")
-                        .HasColumnType("TEXT")
-                        .HasMaxLength(10);
+                        .HasMaxLength(10)
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("ISBN13")
-                        .HasColumnType("TEXT")
-                        .HasMaxLength(15);
+                        .HasMaxLength(15)
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("KorteInhoud")
                         .HasColumnType("TEXT");
@@ -93,6 +101,8 @@ namespace Boek.Data.Migrations
 
                     b.HasIndex("AuteurId");
 
+                    b.HasIndex("FotoId");
+
                     b.HasIndex("GenreId");
 
                     b.HasIndex("TaalKey");
@@ -102,6 +112,30 @@ namespace Boek.Data.Migrations
                     b.HasIndex("VormId");
 
                     b.ToTable("Boeken");
+                });
+
+            modelBuilder.Entity("Boek.Data.Models.DbImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<byte[]>("Content")
+                        .IsRequired()
+                        .HasColumnType("BLOB");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ImageType")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Naam")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("DbImages");
                 });
 
             modelBuilder.Entity("Boek.Data.Models.Genre", b =>
@@ -149,8 +183,8 @@ namespace Boek.Data.Migrations
             modelBuilder.Entity("Boek.Data.Models.Taal", b =>
                 {
                     b.Property<string>("Key")
-                        .HasColumnType("TEXT")
-                        .HasMaxLength(5);
+                        .HasMaxLength(5)
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Naam")
                         .IsRequired()
@@ -199,11 +233,24 @@ namespace Boek.Data.Migrations
                     b.ToTable("BoekVorm");
                 });
 
+            modelBuilder.Entity("Boek.Data.Models.Auteur", b =>
+                {
+                    b.HasOne("Boek.Data.Models.DbImage", "Foto")
+                        .WithMany()
+                        .HasForeignKey("FotoId");
+
+                    b.Navigation("Foto");
+                });
+
             modelBuilder.Entity("Boek.Data.Models.Boekje", b =>
                 {
                     b.HasOne("Boek.Data.Models.Auteur", "Auteur")
                         .WithMany()
                         .HasForeignKey("AuteurId");
+
+                    b.HasOne("Boek.Data.Models.DbImage", "Foto")
+                        .WithMany()
+                        .HasForeignKey("FotoId");
 
                     b.HasOne("Boek.Data.Models.SubGenre", "Genre")
                         .WithMany()
@@ -220,6 +267,18 @@ namespace Boek.Data.Migrations
                     b.HasOne("Boek.Data.Models.Vorm", "Vorm")
                         .WithMany()
                         .HasForeignKey("VormId");
+
+                    b.Navigation("Auteur");
+
+                    b.Navigation("Foto");
+
+                    b.Navigation("Genre");
+
+                    b.Navigation("Taal");
+
+                    b.Navigation("Uitgeverij");
+
+                    b.Navigation("Vorm");
                 });
 
             modelBuilder.Entity("Boek.Data.Models.SubGenre", b =>
@@ -229,6 +288,13 @@ namespace Boek.Data.Migrations
                         .HasForeignKey("GenreId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Genre");
+                });
+
+            modelBuilder.Entity("Boek.Data.Models.Genre", b =>
+                {
+                    b.Navigation("SubGenres");
                 });
 #pragma warning restore 612, 618
         }

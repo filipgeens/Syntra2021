@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Boek.Shared.Defines;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Boek.Data.Models {
-  public class Boekje {
+  public class Boekje : IModel {
     public int Id { get; set; }
     [Required]
     public string Naam { get; set; }
@@ -21,5 +22,6 @@ namespace Boek.Data.Models {
     [MaxLength(18)]
     public string EAN { get; set; }
     public string Afbeelding { get; set; }
+    public DbImage Foto { get; set; }
   }
 }

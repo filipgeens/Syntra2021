@@ -18,6 +18,7 @@ namespace Boek.Data.Db {
     public DbSet<Vorm> BoekVorm { get; set; }
     public DbSet<Uitgeverij> Uitgeverijen { get; set; }
     public DbSet<Taal> Talen { get; set; }
+    public DbSet<DbImage> DbImages { get; set; }
     public string DataPath {
       get {
         string dir = @$"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData).TrimEnd('\\')}\BoekDb";

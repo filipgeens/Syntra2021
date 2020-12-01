@@ -7,13 +7,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Files\Boek.lib" />
+    <None Remove="Files\Boeken.sql" />
+    <None Remove="Images\add.png" />
+    <None Remove="Images\arrow-left.png" />
+    <None Remove="Images\arrow-right.png" />
     <None Remove="Images\boek.png" />
+    <None Remove="Images\Cancel.png" />
+    <None Remove="Images\edit.png" />
+    <None Remove="Images\monotone_arrow_left_small.png" />
+    <None Remove="Images\monotone_minus_round.png" />
+    <None Remove="Images\OK.png" />
+    <None Remove="Images\remove.png" />
     <None Remove="Images\search.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
+    <Content Include="Files\Boek.lib" />
+    <Content Include="Files\Boeken.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,7 +38,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\add.png" />
+    <Resource Include="Images\arrow-left.png" />
+    <Resource Include="Images\arrow-right.png" />
     <Resource Include="Images\boek.png" />
+    <Resource Include="Images\Cancel.png" />
+    <Resource Include="Images\edit.png" />
+    <Resource Include="Images\monotone_arrow_left_small.png" />
+    <Resource Include="Images\monotone_minus_round.png" />
+    <Resource Include="Images\OK.png" />
+    <Resource Include="Images\remove.png" />
     <Resource Include="Images\search.png" />
   </ItemGroup>
 

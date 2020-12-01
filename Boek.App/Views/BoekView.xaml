@@ -1,22 +1,98 @@
-﻿<UserControl x:Class="Boek.App.Views.BoekView"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Boek.App.Views"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="650">
+﻿<UserControl
+    x:Class="Boek.App.Views.BoekView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Boek.App.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="650"
+    mc:Ignorable="d">
     <Grid Background="Transparent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="119*"/>
+            <ColumnDefinition Width="45"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="19*"/>
-            <RowDefinition Height="56*"/>
+            <RowDefinition Height="114*" />
+            <RowDefinition Height="224*" />
+            <RowDefinition Height="7*" />
+            <RowDefinition Height="105*" />
         </Grid.RowDefinitions>
-        <DataGrid Grid.Row="1" ItemsSource="{Binding BoekLijst}"/>
-        <Button  HorizontalAlignment="Left" ToolTip="Zoek in boeken" Width="35" Command="{Binding SearchCommand}" Height="35" Margin="605,10,0,0" VerticalAlignment="Top">
+        <DataGrid
+            Grid.Row="1"
+            AutoGenerateColumns="False"
+            ItemsSource="{Binding BoekLijst}" Grid.ColumnSpan="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding Naam}"
+                    Header="Naam"
+                    IsReadOnly="True" />
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding KorteInhoud}"
+                    Header="Korte inhoud"
+                    IsReadOnly="True" />
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding EAN}"
+                    Header="EAN code"
+                    IsReadOnly="True" />
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding Genre.Omschrijving}"
+                    Header="Genre"
+                    IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button
+            Width="35"
+            Height="35"
+            Margin="5,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Command="{Binding SearchCommand}"
+            ToolTip="Zoek in boeken" Grid.Column="1">
             <Button.Background>
-                <ImageBrush ImageSource="/Images/search.png"/>
+                <ImageBrush ImageSource="/Images/search.png" />
             </Button.Background>
         </Button>
-
+        <TextBox
+            Width="307"
+            Margin="275,19,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            d:Text="Title"
+            Text="{Binding TitleSearchString}"
+            TextWrapping="Wrap" Height="18" />
+        <ScrollViewer Grid.Row="3" Grid.ColumnSpan="1">
+            <TextBlock
+                Grid.Row="3"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                d:Text="TextBlock"
+                Background="Black"
+                FontSize="15"
+                Foreground="Green"
+                Text="{Binding CurrentQuery}"
+                TextWrapping="Wrap" />
+        </ScrollViewer>
+        <TextBox
+            Width="307"
+            Margin="275,0,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            d:Text="Content"
+            Text="{Binding ContentSearchString}"
+            TextWrapping="Wrap" Height="18" />
+        <Label Content="Find in title" HorizontalAlignment="Left" Margin="192,15,0,0" VerticalAlignment="Top" Height="26" Width="69"/>
+        <Label Content="Find in content" HorizontalAlignment="Left" Margin="172,0,0,0" VerticalAlignment="Center" Height="26" Width="89"/>
+        <Button ToolTip="Add" Command="{Binding NewCommand}" Grid.Column="1"  Width="32" Height="32" HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Grid.Row="1">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/add.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </UserControl>
