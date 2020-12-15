@@ -22,7 +22,7 @@
         <DataGrid
             Grid.Row="1"
             AutoGenerateColumns="False"
-            ItemsSource="{Binding BoekLijst}" Grid.ColumnSpan="1">
+            ItemsSource="{Binding BoekLijst}" SelectedItem="{Binding SelectedBoek}" Grid.ColumnSpan="1">
             <DataGrid.Columns>
                 <DataGridTextColumn
                     Width="*"
@@ -43,6 +43,16 @@
                     Width="*"
                     Binding="{Binding Genre.Omschrijving}"
                     Header="Genre"
+                    IsReadOnly="True" />
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding Genre.Genre.Omschrijving}"
+                    Header="HoofdGenre"
+                    IsReadOnly="True" />
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding Auteur.ArtiestenNaam}"
+                    Header="Auteur"
                     IsReadOnly="True" />
             </DataGrid.Columns>
         </DataGrid>
@@ -92,6 +102,11 @@
         <Button ToolTip="Add" Command="{Binding NewCommand}" Grid.Column="1"  Width="32" Height="32" HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Grid.Row="1">
             <Button.Background>
                 <ImageBrush ImageSource="/Images/add.png"/>
+            </Button.Background>
+        </Button>
+        <Button ToolTip="Add" Command="{Binding ViewCommand}" Grid.Column="1"  Width="32" Height="32" HorizontalAlignment="Left" Margin="8,57,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Grid.Row="1">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/edit.png"/>
             </Button.Background>
         </Button>
     </Grid>
