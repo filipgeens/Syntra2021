@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>EF_Vb</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\add.png" />
+    <None Remove="Images\arrow-left.png" />
+    <None Remove="Images\arrow-right.png" />
+    <None Remove="Images\Cancel.png" />
+    <None Remove="Images\edit.png" />
+    <None Remove="Images\monotone_arrow_left_small.png" />
+    <None Remove="Images\monotone_minus_round.png" />
+    <None Remove="Images\OK.png" />
+    <None Remove="Images\remove.png" />
+    <None Remove="Images\search.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Boek.Shared\Boek.Shared.csproj" />
+    <ProjectReference Include="..\EF-Vb.Models\EF-Vb.Db.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\add.png" />
+    <Resource Include="Images\arrow-left.png" />
+    <Resource Include="Images\arrow-right.png" />
+    <Resource Include="Images\Cancel.png" />
+    <Resource Include="Images\edit.png" />
+    <Resource Include="Images\monotone_arrow_left_small.png" />
+    <Resource Include="Images\monotone_minus_round.png" />
+    <Resource Include="Images\OK.png" />
+    <Resource Include="Images\remove.png" />
+    <Resource Include="Images\search.png" />
+  </ItemGroup>
+
+</Project>
