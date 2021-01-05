@@ -35,8 +35,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Boek.Shared\Boek.Shared.csproj" />
     <ProjectReference Include="..\EF-Vb.Models\EF-Vb.Db.csproj" />
+    <ProjectReference Include="..\Syntra.Shared\Syntra.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>

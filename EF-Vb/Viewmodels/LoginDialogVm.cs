@@ -1,4 +1,4 @@
-﻿using Boek.Shared.Wpf;
+﻿using Syntra.Shared.Wpf;
 using EF_Vb.Models;
 using EF_Vb.Models.Repositories;
 using System;

@@ -14,6 +14,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cursus", "Cursus", "{C36F1239-EA0F-4912-B32E-F7D6C01017C3}"
 	ProjectSection(SolutionItems) = preProject
 		Cursus\CSharp-IO-EF.pptx = Cursus\CSharp-IO-EF.pptx
+		D:\Onedrive\documenten\Syntra\2021-Avond-CSharp\CSharp-IO-RegEx.pptx = D:\Onedrive\documenten\Syntra\2021-Avond-CSharp\CSharp-IO-RegEx.pptx
 		Cursus\CSharp-IO.pptx = Cursus\CSharp-IO.pptx
 		Cursus\git-commands.xlsx = Cursus\git-commands.xlsx
 		Cursus\SourceControl-GIT.pptx = Cursus\SourceControl-GIT.pptx
@@ -37,9 +38,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Boek.App", "Boek.App\Boek.A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EF-Voorbeeld", "EF-Voorbeeld", "{ADC1263A-A2B4-4432-AFFA-57617ED78D50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF-Vb", "EF-Vb\EF-Vb.csproj", "{404D2FA4-7384-42B7-BCD4-25F7885795D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EF-Vb", "EF-Vb\EF-Vb.csproj", "{404D2FA4-7384-42B7-BCD4-25F7885795D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF-Vb.Db", "EF-Vb.Models\EF-Vb.Db.csproj", "{E064F65B-DBF2-4DDC-A03E-DDB1433A3363}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EF-Vb.Db", "EF-Vb.Models\EF-Vb.Db.csproj", "{E064F65B-DBF2-4DDC-A03E-DDB1433A3363}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{6E76F991-FF37-4E77-AB86-88E32934A738}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Syntra.Shared", "Syntra.Shared\Syntra.Shared.csproj", "{2E9A349C-D42D-4102-BD6B-F0087242EA45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +96,10 @@ Global
 		{E064F65B-DBF2-4DDC-A03E-DDB1433A3363}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E064F65B-DBF2-4DDC-A03E-DDB1433A3363}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E064F65B-DBF2-4DDC-A03E-DDB1433A3363}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E9A349C-D42D-4102-BD6B-F0087242EA45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E9A349C-D42D-4102-BD6B-F0087242EA45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E9A349C-D42D-4102-BD6B-F0087242EA45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E9A349C-D42D-4102-BD6B-F0087242EA45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +116,7 @@ Global
 		{E8E87A91-3A36-435C-B70D-51CCA0617AF5} = {8955935E-CE39-4105-98A3-0571D85BF44B}
 		{404D2FA4-7384-42B7-BCD4-25F7885795D3} = {ADC1263A-A2B4-4432-AFFA-57617ED78D50}
 		{E064F65B-DBF2-4DDC-A03E-DDB1433A3363} = {ADC1263A-A2B4-4432-AFFA-57617ED78D50}
+		{2E9A349C-D42D-4102-BD6B-F0087242EA45} = {6E76F991-FF37-4E77-AB86-88E32934A738}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7DDC3A0E-23EC-4C6F-B3B0-D053FEBEE236}
