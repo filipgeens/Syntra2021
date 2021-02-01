@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Reflection.Cli": {
+      "commandName": "Project",
+      "commandLineArgs": "c:\\tmp\\CustomLib.dll"
+    }
+  }
+}

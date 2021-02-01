@@ -4,6 +4,10 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <Authors>Filip Geens</Authors>
+    <Company>SyntraAB</Company>
+    <Product>Mijn Boek App</Product>
+    <Copyright>Filip inc</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
