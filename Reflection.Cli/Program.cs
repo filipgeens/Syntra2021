@@ -8,6 +8,7 @@ namespace Reflection.Cli {
       CLIBase cli = new CLIBase();
       cli.Plugins.AddRange(DynamicPlugis.FindAll(@"CliDemo\Plugins"));
       cli.Run(args);
+
     }
   }
 }
