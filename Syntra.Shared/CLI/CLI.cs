@@ -25,7 +25,7 @@ namespace Syntra.Shared.CLI {
 			Console.ForegroundColor = curColor;
 			Console.BackgroundColor = curBackCol;
 		}
-
+		public void Show(string msg) => Console.WriteLine(msg);
 		public void Run(string[] args=null) {
 			while (!Exit) {
 				Console.Write(_cursor);
