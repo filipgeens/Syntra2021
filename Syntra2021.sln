@@ -69,6 +69,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CliPlugin.Converter", "CliP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CliPlugin.Schelder", "CliPlugin.Schelder\CliPlugin.Schelder.csproj", "{AEE887B3-3338-4891-BF01-8D03B6C6161B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patterns", "Patterns", "{3B5E2E9A-4741-4CBE-B986-A231244B6909}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.Demo", "Pattern.Demo\Pattern.Demo.csproj", "{4D3561AF-9411-45C9-9E87-D851D8AFB429}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +155,10 @@ Global
 		{AEE887B3-3338-4891-BF01-8D03B6C6161B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEE887B3-3338-4891-BF01-8D03B6C6161B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEE887B3-3338-4891-BF01-8D03B6C6161B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D3561AF-9411-45C9-9E87-D851D8AFB429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D3561AF-9411-45C9-9E87-D851D8AFB429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D3561AF-9411-45C9-9E87-D851D8AFB429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D3561AF-9411-45C9-9E87-D851D8AFB429}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -176,6 +184,7 @@ Global
 		{DEE35E9B-44F6-4422-A155-3F77BAD2D449} = {2E6E11E2-29C5-4124-A675-B89390A94E9B}
 		{D371EB31-1281-4312-92AC-9077B578FA12} = {DEE35E9B-44F6-4422-A155-3F77BAD2D449}
 		{AEE887B3-3338-4891-BF01-8D03B6C6161B} = {DEE35E9B-44F6-4422-A155-3F77BAD2D449}
+		{4D3561AF-9411-45C9-9E87-D851D8AFB429} = {3B5E2E9A-4741-4CBE-B986-A231244B6909}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7DDC3A0E-23EC-4C6F-B3B0-D053FEBEE236}
