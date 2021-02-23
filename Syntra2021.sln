@@ -16,6 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cursus", "Cursus", "{C36F12
 		Cursus\CSharp-IO-EF.pptx = Cursus\CSharp-IO-EF.pptx
 		Cursus\CSharp-IO-RegEx.pptx = Cursus\CSharp-IO-RegEx.pptx
 		Cursus\CSharp-IO.pptx = Cursus\CSharp-IO.pptx
+		Cursus\CSharp-Patterns.pptx = Cursus\CSharp-Patterns.pptx
 		Cursus\CSharp-Reflection.pptx = Cursus\CSharp-Reflection.pptx
 		Cursus\CSharp-UnitTests.pptx = Cursus\CSharp-UnitTests.pptx
 		Cursus\git-commands.xlsx = Cursus\git-commands.xlsx
@@ -64,9 +65,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomLib", "CustomLib\Cust
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{DEE35E9B-44F6-4422-A155-3F77BAD2D449}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CliPlugin.Converter", "CliPlugin.Converter\CliPlugin.Converter.csproj", "{D371EB31-1281-4312-92AC-9077B578FA12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CliPlugin.Converter", "CliPlugin.Converter\CliPlugin.Converter.csproj", "{D371EB31-1281-4312-92AC-9077B578FA12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CliPlugin.Schelder", "CliPlugin.Schelder\CliPlugin.Schelder.csproj", "{AEE887B3-3338-4891-BF01-8D03B6C6161B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CliPlugin.Schelder", "CliPlugin.Schelder\CliPlugin.Schelder.csproj", "{AEE887B3-3338-4891-BF01-8D03B6C6161B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
