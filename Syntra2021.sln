@@ -13,6 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HuisartsModels", "HuisartsM
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cursus", "Cursus", "{C36F1239-EA0F-4912-B32E-F7D6C01017C3}"
 	ProjectSection(SolutionItems) = preProject
+		Cursus\CSharp-Concurrency.pptx = Cursus\CSharp-Concurrency.pptx
 		Cursus\CSharp-IO-EF.pptx = Cursus\CSharp-IO-EF.pptx
 		Cursus\CSharp-IO-RegEx.pptx = Cursus\CSharp-IO-RegEx.pptx
 		Cursus\CSharp-IO.pptx = Cursus\CSharp-IO.pptx
@@ -71,7 +72,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CliPlugin.Schelder", "CliPl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patterns", "Patterns", "{3B5E2E9A-4741-4CBE-B986-A231244B6909}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.Demo", "Pattern.Demo\Pattern.Demo.csproj", "{4D3561AF-9411-45C9-9E87-D851D8AFB429}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pattern.Demo", "Pattern.Demo\Pattern.Demo.csproj", "{4D3561AF-9411-45C9-9E87-D851D8AFB429}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
